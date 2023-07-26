@@ -16,4 +16,5 @@ class BlogService {
     }
 }
 
+// Sửa code
 export default new BlogService();
