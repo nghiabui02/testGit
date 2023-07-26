@@ -1,10 +1,9 @@
+import { blog } from "../entity/blog";
 declare class BlogService {
-    private Repository;
-    constructor();
-    getAll: () => Promise<any>;
+    private repository;
+    getAll: () => Promise<blog[]>;
     add: (blogs: any) => Promise<void>;
-    add1: (blogs: any) => Promise<void>;
-    edit2: (blogs: any) => Promise<void>;
+    delete: (blogs: any) => Promise<import("typeorm").DeleteResult>;
 }
 declare const _default: BlogService;
 export default _default;
