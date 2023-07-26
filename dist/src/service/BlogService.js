@@ -10,6 +10,12 @@ class BlogService {
         this.add = async (blogs) => {
             await this.Repository.save(blogs);
         };
+        this.add1 = async (blogs) => {
+            await this.Repository.save1(blogs);
+        };
+        this.edit2 = async (blogs) => {
+            await this.Repository.edit2(blogs);
+        };
         this.Repository = data_source_1.AppDataSource.getRepository(blog_1.blog);
     }
 }
