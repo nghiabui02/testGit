@@ -12,6 +12,7 @@ class BlogService {
     delete = async (blogs) => {
         return await this.repository.delete({id:blogs})
     }
+    //xong them va xoa
 
 }
 // Nghia Sửa code
