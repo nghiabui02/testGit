@@ -18,10 +18,9 @@ class BlogService {
     add1 = async (blogs) => {
         await this.Repository.save1(blogs)
     }
-    edit = async (blogs) => {
-        await this.Repository.edit(blogs)
+    edit1 = async (blogs) => {
+        await this.Repository.edit1(blogs)
     }
 }
-
 // Sửa code
 export default new BlogService();
