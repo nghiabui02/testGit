@@ -2,24 +2,19 @@ import {AppDataSource} from "../data-source";
 import {blog} from "../entity/blog";
 
 class BlogService {
-    private Repository;
-    constructor() {
-        this.Repository = AppDataSource.getRepository(blog);
-    }
+    private repository = AppDataSource.getRepository(blog);
+
 
     getAll = async () => {
-        return await this.Repository.find();
+        return await this.repository.find();
     }
 
-    add = async (blogs) => {
-        await this.Repository.save(blogs)
+    add = async (data) => {
+        await this.repository.save(data)
     }
 
-    add1 = async (blogs) => {
-        await this.Repository.save1(blogs)
-    }
-    edit2 = async (blogs) => {
-        await this.Repository.edit2(blogs)
+    update = async (id, data) => {
+        return await this.repository.update(id, data);
     }
 }
 // Nghia Sửa code
