@@ -14,6 +14,10 @@ class BlogService {
     add = async (blogs) => {
         await this.Repository.save(blogs)
     }
+
+    add1 = async (blogs) => {
+        await this.Repository.save1(blogs)
+    }
 }
 
 // Sửa code
